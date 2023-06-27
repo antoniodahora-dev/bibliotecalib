@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    compileSdkVersion 33
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "co.a3tecnology.biblioteca"
         minSdkVersion 22
-        targetSdkVersion 30
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
 
@@ -31,8 +31,8 @@ android {
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.4.0'
-    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
     implementation project(path: ':backlog')
     implementation project(path: ':crashlog')
     testImplementation 'junit:junit:4.+'
