@@ -1,18 +1,14 @@
 plugins {
-    id 'com.android.library'
-    id 'kotlin-android'
+    id 'com.android.application'
     id 'maven-publish'
 }
-
-group = 'com.github.antoniodahora-dev'
-version = '1.0'
 
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-
+        applicationId "co.a3tecnology.biblioteca"
         minSdkVersion 22
         targetSdkVersion 30
         versionCode 1
@@ -35,28 +31,11 @@ android {
 
 dependencies {
 
-    implementation 'com.android.support:multidex:1.0.3'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.4.0'
     implementation project(path: ':backlog')
     implementation project(path: ':crashlog')
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-}
-
-afterEvaluate {
-    publishing {
-        publications {
-            // Creates a Maven publication called "release".
-            release(MavenPublication) {
-                from components.release
-                groupId = 'com.github.antoniodahora-dev'
-                artifactId = 'bibliotecalib'
-                version = '1.0'
-            }
-        }
-    }
 }
