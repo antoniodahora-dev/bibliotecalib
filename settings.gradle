@@ -2,3 +2,4 @@ rootProject.name = "Biblioteca"
 include ':app'
 include ':backlog'
 include ':crashlog'
+include ':newlibrary'
