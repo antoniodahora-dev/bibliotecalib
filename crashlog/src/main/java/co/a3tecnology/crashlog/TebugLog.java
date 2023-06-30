@@ -2,9 +2,10 @@ package co.a3tecnology.crashlog;
 
 import android.util.Log;
 
-public final class CrashLog {
+
+public final class TebugLog {
 
     public static void print(String message) {
-        Log.d("CrashLog", message);
+        Log.d("TebugLog", message);
     }
 }
