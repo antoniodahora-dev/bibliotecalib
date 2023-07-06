@@ -5,7 +5,7 @@ plugins {
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.0"
+//    buildToolsVersion "30.0.0"
 
     defaultConfig {
         minSdkVersion 22
@@ -45,7 +45,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.antoniodahora-dev' //seu git id
                 artifactId = 'backlog' // nome do modulo-lib
-                version = '2.2' // igual ao Tag
+                version = '2.3' // igual ao Tag
             }
         }
     }
